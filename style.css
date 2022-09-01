@@ -1,0 +1,133 @@
+body {
+  background-color: #f3f5fc;
+  font-family: "Inter", sans-serif;
+}
+
+header img {
+  margin: 40px 80px;
+  width: 40px;
+  height: auto;
+}
+
+header img:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.caja-resultado {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 944px;
+  left: 1200px;
+  top: 40px;
+  background: #ffffff;
+  /* shadow */
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.caja-resultado img {
+  position: relative;
+  width: 336px;
+  height: 304px;
+  vertical-align: middle;
+}
+
+.title-1 {
+  color: #343a40;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+  margin: 40px 20px 1px;
+}
+
+.title-2 {
+  line-height: 1.5em;
+  margin: 5px 20px;
+  font-size: 1.2em;
+  color: #495057;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.caja-ingreso {
+  display: flex;
+  margin: 10px 200px;
+  width: 900px;
+  height: 700px;
+  justify-content: center;
+}
+
+.caja-ingreso form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.formu-ingreso input[type="text"] {
+  width: 577px;
+  height: 48px;
+  left: 240px;
+  top: 168px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0a3871;
+  background-color: #f3f5fc;
+  border: none;
+  border-color: transparent;
+}
+
+.formu-ingreso input[type="text"]:focus {
+    border: none;
+    border-color: transparent;
+    outline: none;
+  }
+
+.formu-ingreso input[type=text]::placeholder {
+    color: #0a3871;
+}
+
+.caja-botones input:nth-child(1) {
+  padding: 24px;
+  gap: 8px;
+  width: 328px;
+  height: 67px;
+  /* Dark blue/dark-blue-300 */
+  background: #0a3871;
+  border-radius: 24px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  color: white; 
+}
+
+.caja-botones input:nth-child(2) {
+box-sizing: border-box;
+/* Auto layout */
+padding: 24px;
+gap: 8px;
+width: 328px;
+height: 67px;
+
+background: #D8DFE8;
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0A3871;
+color: #0A3871;
+border-radius: 24px;
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+}
