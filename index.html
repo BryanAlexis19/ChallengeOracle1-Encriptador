@@ -31,16 +31,17 @@
         </div>
       </form>
     </section>
-    <!-- <section class="caja-resultadoEmpty">
-        <img class="muneco" src="images/muneco.png" alt="muneco" />
-        <p class="title-1">Ningún mensaje fue encontrado</p>
-        <p class="title-2">
-          Ingrese el texto que desee encriptar o desencriptar
-        </p>
-      </section> -->
-    <section class="caja-resultadoFilled">
+    <section class="btnArea">
+      <button id="btnReverse" name="btnReverse" onclick="btnReverseHandler()">🔄</button>
+    </section>
+    <section class="caja-resultadoEmpty" id="caja-resultadoEmpty">
+      <img class="muneco" src="images/muneco.png" alt="muneco" />
+      <p class="title-1" >Ningún mensaje fue encontrado</p>
+      <p class="title-2">
+        Ingrese el texto que desee encriptar o desencriptar
+      </p>
       <textarea name="txtEncriptado" id="txtEncriptado" cols="30" rows="10"></textarea>
-      <button name="btnCopiar" id="btnCopiar">Copiar</button>
+      <button name="btnCopiar" id="btnCopiar" onclick="btnCopiarHandler()">Copiar</button>
     </section>
   </main>
 

@@ -14,50 +14,7 @@ header img:hover {
   transition: 0.2s;
 }
 
-.caja-resultadoEmpty {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: 944px;
-  left: 1200px;
-  top: 40px;
-  background: #ffffff;
-  /* shadow */
-  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  border-radius: 32px;
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-  align-content: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-.caja-resultadoEmpty img {
-  position: relative;
-  width: 336px;
-  height: 304px;
-  vertical-align: middle;
-}
-
-.title-1 {
-  color: #343a40;
-  font-size: 2em;
-  text-align: center;
-  font-weight: bolder;
-  margin: 40px 20px 1px;
-}
-
-.title-2 {
-  line-height: 1.5em;
-  margin: 5px 20px;
-  font-size: 1.2em;
-  color: #495057;
-  text-align: center;
-  padding: 0 20px;
-}
-
+/* AREA DE INGRESO DE DATOS */
 .caja-ingreso {
   display: flex;
   margin: 10px 200px;
@@ -87,12 +44,19 @@ header img:hover {
   border: none;
   border-color: transparent;
   resize: none;
+  transition: 0.3s;
+  text-transform: lowercase;
 }
 
 .formu-ingreso textarea:focus {
   border: none;
   border-color: transparent;
   outline: none;
+}
+
+.formu-ingreso textarea:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
 }
 
 .formu-ingreso textarea::placeholder {
@@ -112,6 +76,14 @@ header img:hover {
   order: 0;
   flex-grow: 0;
   color: white;
+  font-size: 1.2em;
+}
+
+.caja-botones input:nth-child(1):hover{
+  background: #d8dfe8;
+  border: 1px solid #0a3871;
+  color: #0a3871;
+  font-weight: bold;
 }
 
 .caja-botones input:nth-child(2) {
@@ -131,9 +103,51 @@ header img:hover {
   flex: none;
   order: 1;
   flex-grow: 0;
+  font-size: 1.2em;
 }
 
-.caja-resultadoFilled {
+.caja-botones input:nth-child(2):hover {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #d8dfe8;
+  font-weight: bold;
+}
+
+
+/* ----------BOTON DE REVERSE ENCRIPTATION----------- */
+
+.btnArea {
+  position: absolute;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  border: none;
+  margin: 16px;
+  padding: 0px;
+  border-radius: 12px;
+  justify-content: center;
+  top: 256px;
+  left: 1080px;
+  font-size: 2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+.btnArea button {
+  font-size: 2rem;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+  border: 1px dashed #0a3871;
+}
+
+.btnArea button:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+/* ---------------CAJA DE RESULTADOS ---------------*/
+.caja-resultadoEmpty {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -145,15 +159,22 @@ header img:hover {
   /* shadow */
   box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
   border-radius: 32px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   justify-items: center;
   align-content: center;
   margin: 20px;
   padding: 20px;
+  transition: 0.3s;
 }
 
-.caja-resultadoFilled textarea {
+.caja-resultadoEmpty:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+
+.caja-resultadoEmpty textarea {
+  display: none;
   width: 336px;
   height: 781px;
   line-height: 36px;
@@ -167,13 +188,14 @@ header img:hover {
   resize: none;
 }
 
-.caja-resultadoFilled textarea:focus {
+.caja-resultadoEmpty textarea:focus {
   border: none;
   border-color: transparent;
   outline: none;
 }
 
-.caja-resultadoFilled button {
+.caja-resultadoEmpty button {
+  display: none;
   box-sizing: border-box;
   padding: 24px;
   gap: 8px;
@@ -183,5 +205,39 @@ header img:hover {
   border: 1px solid #0a3871;
   border-radius: 24px;
   margin-bottom: 32px;
+  font-size: 1.2em;
+  color: #0a3871;
 }
 
+.caja-resultadoEmpty button:hover {
+  background: #0a3871;
+  color: white;
+  border: 1px solid #d8dfe8;
+  font-weight: bold;
+}
+
+.caja-resultadoEmpty img {
+  display: inline;
+  position: relative;
+  width: 336px;
+  height: 304px;
+}
+
+.title-1 {
+  display: inline;
+  color: #343a40;
+  font-size: 2em;
+  text-align: center;
+  font-weight: bolder;
+  margin: 40px 20px 1px;
+}
+
+.title-2 {
+  display: inline;
+  line-height: 1.5em;
+  margin: 5px 20px;
+  font-size: 1.2em;
+  color: #495057;
+  text-align: center;
+  padding: 0 20px;
+}   
